@@ -14,6 +14,7 @@
 		BF788AF21F79A02B006D84E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF788AF01F79A02B006D84E2 /* LaunchScreen.storyboard */; };
 		BF788AFD1F79A02B006D84E2 /* TutorialGameCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF788AFC1F79A02B006D84E2 /* TutorialGameCenterTests.swift */; };
 		BF788B081F79A02B006D84E2 /* TutorialGameCenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF788B071F79A02B006D84E2 /* TutorialGameCenterUITests.swift */; };
+		BF788B171F79A039006D84E2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF788B161F79A039006D84E2 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BF788B031F79A02B006D84E2 /* TutorialGameCenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorialGameCenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF788B071F79A02B006D84E2 /* TutorialGameCenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialGameCenterUITests.swift; sourceTree = "<group>"; };
 		BF788B091F79A02B006D84E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF788B161F79A039006D84E2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF788B171F79A039006D84E2 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				BF788AFB1F79A02B006D84E2 /* TutorialGameCenterTests */,
 				BF788B061F79A02B006D84E2 /* TutorialGameCenterUITests */,
 				BF788AE51F79A02B006D84E2 /* Products */,
+				BF788B151F79A039006D84E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				BF788B091F79A02B006D84E2 /* Info.plist */,
 			);
 			path = TutorialGameCenterUITests;
+			sourceTree = "<group>";
+		};
+		BF788B151F79A039006D84E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF788B161F79A039006D84E2 /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +206,11 @@
 					BF788AE31F79A02B006D84E2 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					BF788AF71F79A02B006D84E2 = {
 						CreatedOnToolsVersion = 9.0;
