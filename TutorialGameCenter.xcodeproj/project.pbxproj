@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095BCA7E1F7B045600596CB3 /* MatchmakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095BCA7D1F7B045600596CB3 /* MatchmakerViewController.swift */; };
 		BF788AE81F79A02B006D84E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF788AE71F79A02B006D84E2 /* AppDelegate.swift */; };
 		BF788AEA1F79A02B006D84E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF788AE91F79A02B006D84E2 /* ViewController.swift */; };
 		BF788AED1F79A02B006D84E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF788AEB1F79A02B006D84E2 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095BCA7D1F7B045600596CB3 /* MatchmakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchmakerViewController.swift; sourceTree = "<group>"; };
 		BF788AE41F79A02B006D84E2 /* TutorialGameCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialGameCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF788AE71F79A02B006D84E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF788AE91F79A02B006D84E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				BF788AE71F79A02B006D84E2 /* AppDelegate.swift */,
 				BF788AE91F79A02B006D84E2 /* ViewController.swift */,
+				095BCA7D1F7B045600596CB3 /* MatchmakerViewController.swift */,
 				BF788AEB1F79A02B006D84E2 /* Main.storyboard */,
 				BF788AEE1F79A02B006D84E2 /* Assets.xcassets */,
 				BF788AF01F79A02B006D84E2 /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 			files = (
 				BF788AEA1F79A02B006D84E2 /* ViewController.swift in Sources */,
 				BF788AE81F79A02B006D84E2 /* AppDelegate.swift in Sources */,
+				095BCA7E1F7B045600596CB3 /* MatchmakerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

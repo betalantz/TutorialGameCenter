@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J5X-ij-4Oa">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,61 +22,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-t7-PkM">
-                                <rect key="frame" x="103" y="75" width="65" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="CH6-Rf-9ZJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enR-TH-yl9">
-                                <rect key="frame" x="195" y="75" width="10" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsK-fG-QoK">
-                                <rect key="frame" x="35" y="131" width="250" height="29"/>
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="cOx-3a-ZRe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="ADD SCORE AND SUBMIT TO GC">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="addScoreAndSubmitToGC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3N-yX-XqK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp9-tm-TYP">
-                                <rect key="frame" x="30" y="188" width="261" height="29"/>
-                                <color key="backgroundColor" red="0.32671682959999998" green="0.40783606569999997" blue="0.68361529560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="CHECK GAME CENTER LEADERBOARD">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkGCLeaderboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bd6-pI-Ia9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-0C-oGI">
+                                <rect key="frame" x="20" y="60" width="253" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-t7-PkM">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="CH6-Rf-9ZJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enR-TH-yl9">
+                                        <rect key="frame" x="0.0" y="20.5" width="253" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsK-fG-QoK">
+                                        <rect key="frame" x="0.0" y="41" width="253" height="44"/>
+                                        <color key="backgroundColor" red="0.92941176469999998" green="0.33333333329999998" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="cOx-3a-ZRe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="ADD SCORE AND SUBMIT TO GC">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addScoreAndSubmitToGC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3N-yX-XqK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp9-tm-TYP">
+                                        <rect key="frame" x="0.0" y="85" width="253" height="315"/>
+                                        <color key="backgroundColor" red="0.32671682959999998" green="0.40783606569999997" blue="0.68361529560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="CHECK GAME CENTER LEADERBOARD">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkGCLeaderboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bd6-pI-Ia9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XsK-fG-QoK" firstAttribute="top" secondItem="dPf-t7-PkM" secondAttribute="bottom" constant="35" id="Be4-nB-Q5r"/>
-                            <constraint firstItem="dPf-t7-PkM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="FES-B6-KNd"/>
-                            <constraint firstItem="XsK-fG-QoK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ij3-CA-URN"/>
-                            <constraint firstItem="dPf-t7-PkM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="JZa-Nt-rMN"/>
-                            <constraint firstItem="lp9-tm-TYP" firstAttribute="top" secondItem="XsK-fG-QoK" secondAttribute="bottom" constant="28" id="N9O-m7-nwo"/>
-                            <constraint firstItem="dPf-t7-PkM" firstAttribute="baseline" secondItem="enR-TH-yl9" secondAttribute="baseline" id="Nmd-od-FfJ"/>
-                            <constraint firstItem="XsK-fG-QoK" firstAttribute="centerX" secondItem="lp9-tm-TYP" secondAttribute="centerX" id="dLZ-9k-b2G"/>
-                            <constraint firstItem="enR-TH-yl9" firstAttribute="leading" secondItem="dPf-t7-PkM" secondAttribute="trailing" constant="27" id="jNJ-QV-isd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lp9-tm-TYP" secondAttribute="bottom" constant="420" id="kVR-fa-bLC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="enR-TH-yl9" secondAttribute="trailing" constant="115" id="tsP-FX-BGr"/>
-                            <constraint firstItem="XsK-fG-QoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="ws1-mi-IYh"/>
-                            <constraint firstItem="lp9-tm-TYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xOu-vm-qqU"/>
+                            <constraint firstItem="X1E-0C-oGI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8tf-XY-Bjp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X1E-0C-oGI" secondAttribute="bottom" constant="20" id="TZX-Tw-J8B"/>
+                            <constraint firstItem="X1E-0C-oGI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="eY3-vs-Ff6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X1E-0C-oGI" secondAttribute="trailing" constant="20" id="m4H-4U-y08"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,6 +83,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="789" y="73"/>
+        </scene>
+        <!--Match Maker View Controller Delegate-->
+        <scene sceneID="IsH-DE-xw5">
+            <objects>
+                <viewController id="J5X-ij-4Oa" customClass="MatchMakerViewControllerDelegate" customModule="TutorialGameCenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OfH-8p-pak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qT-Gl-dCU">
+                                <rect key="frame" x="27" y="212.5" width="266" height="55"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
+                                <state key="normal" title="DO NOT PRESS">
+                                    <color key="titleColor" red="0.74369273970000005" green="0.94239152680000005" blue="0.36190100850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="matchButtonPressed:" destination="J5X-ij-4Oa" eventType="touchUpInside" id="cpo-bJ-DuU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8qT-Gl-dCU" firstAttribute="centerX" secondItem="OfH-8p-pak" secondAttribute="centerX" id="9w0-gb-POj"/>
+                            <constraint firstItem="8qT-Gl-dCU" firstAttribute="centerY" secondItem="OfH-8p-pak" secondAttribute="centerY" id="lYQ-KX-QwF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="glY-eo-KDP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTL-Pp-sFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="-289"/>
         </scene>
     </scenes>
 </document>
