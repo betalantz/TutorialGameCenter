@@ -16,7 +16,7 @@ class MatchMakerViewControllerDelegate: UIViewController, GKMatchmakerViewContro
     func matchmakerViewController(_ viewController: GKMatchmakerViewController, didFailWithError error: Error) {
         print ("Error \(error)")
     }
-    
+    let socket = SocketIOClient(socketURL: "localhost:8080")
     var isAuthenticatedYet = false
     
     @IBAction func matchButtonPressed(_ sender: UIButton) {

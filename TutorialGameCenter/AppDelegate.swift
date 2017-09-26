@@ -5,7 +5,6 @@
 //  Created by Betalantz on 9/25/17.
 //  Copyright © 2017 Olivier Tests. All rights reserved.
 //
-
 import UIKit
 
 @UIApplicationMain
